@@ -1,0 +1,13 @@
+<div class="movies-container">
+    <div class="movie-card" *ngFor="let movie of movieList">
+      <p class="movie__description">
+        {{ movie.description }}
+      </p>
+      <img [src]="movie.imgUrl" />
+  
+      <h4>{{ movie.title }} - {{ movie.date }}</h4>
+  
+      <p>{{ movie.category }}</p>
+      <app-star-rating [rate]="movie.rate"></app-star-rating>
+    </div>
+  </div>

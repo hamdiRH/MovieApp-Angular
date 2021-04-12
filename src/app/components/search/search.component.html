@@ -1,0 +1,9 @@
+
+
+<nav class="navbar navbar-light bg-light shadow mb-2 bg-white">
+  <span class="navbar-brand mb-0 h1">MovieApp</span>
+  <form class="d-flex align-items-center" >
+    <input #searchValue (input)="search(searchValue.value)" type="text" placeholder="Movie Name" class="mr-2"/>
+     <app-star-rating (handleRate)="searchByRate($event)"></app-star-rating> 
+  </form>
+</nav>

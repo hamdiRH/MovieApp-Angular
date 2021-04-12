@@ -1,0 +1,59 @@
+<div>
+    <button id="open-modal-btn" (click)="toggleIsOpen()">Add Movie</button>
+    <div class="modal-container" [class.open]="isOpen" (click)="toggleIsOpen()">
+      <form (click)="stopPropagation($event)" (submit)="handleSubmit($event)">
+        <h3>Add Movie</h3>
+        <label>Title</label>
+        <input
+          required
+          [(ngModel)]="title"
+          name="title"
+          type="text"
+          placeholder="Title..."
+        />
+        <label>Year Of relase</label>
+        <input
+          required
+          [(ngModel)]="date"
+          name="date"
+          type="text"
+          pattern="[0-9]{4}"
+          placeholder="Year..."
+        />
+        <label>Rate</label>
+        <input
+          required
+          [(ngModel)]="rate"
+          name="rate"
+          type="text"
+          pattern="[0-5]{1}"
+          placeholder="Rate..."
+        />
+        <label>Category</label>
+        <input
+          required
+          [(ngModel)]="category"
+          name="category"
+          type="text"
+          placeholder="Category..."
+        />
+        <label>Image</label>
+        <input
+          required
+          [(ngModel)]="imgUrl"
+          name="imgUrl"
+          type="url"
+          placeholder="image url..."
+        />
+        <label>Description</label>
+        <input
+          required
+          [(ngModel)]="description"
+          name="description"
+          type="text"
+          placeholder="Description..."
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,9 @@
+<p class="m-auto">
+  <span
+    class="gold"
+    *ngFor="let i of [1, 2, 3, 4, 5]"
+    [class.gold]="i <= rate"
+    (click)="onStarClick(i)"
+    >★
+  </span>
+</p>
