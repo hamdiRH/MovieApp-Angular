@@ -27,7 +27,7 @@ export interface IMovie {
       rate: 4.4,
       date: '2021',
       imgUrl:
-        'https://pics.filmaffinity.com/The_Snow_Queen_Mirrorlands-493313156-large.jpg',
+        '../../../assets/The_Snow_Queen.jpg',
       description:
         "Hansel and Gretel of fairy-tale fame -- now acting as secret agents -- must use magic, clever thinking and teamwork on a mission to find a missing king.",
       category: ' Adventure | Comedy ',
